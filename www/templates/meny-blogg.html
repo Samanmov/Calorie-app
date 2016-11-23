@@ -1,0 +1,29 @@
+
+<ion-view view-title="Blogg">
+	<ion-content>
+		<div ng-controller="bloggCtrl"> 
+			<ion-list > 
+				<ion-item ng-repeat="item in blogg" ui-sref="meny.singleItem({id:item.$id})" class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap">
+					<img ng-src="{{item.img}}">
+					<h3>{{item.title}}</h3>
+					<p>{{item.date}}</p>
+					<h4>{{item.author}}</h4>
+					<p>{{item.paragraph}}</p>
+					<i class="icon ion-chevron-right"></i>
+					<ion-option-button  class="button-assertive icon-left ion-ios-trash"  ng-click="remove(item.$id)">Ta bort
+        			</ion-option-button>
+       				 <ion-option-button class="button-positive icon-left ion-edit"   ui-sref="meny.editItem({id:item.$id})">Redigera</ion-option-button>
+ 
+				</ion-item>
+			</ion-list>
+		</div>
+		<div class="row row-bottom">
+			  <div class="col col-33 col-offset-80">
+			  	  <button class="button button-icon ion-plus-circled" id="buttonicon" ui-sref="meny.add" ></button>
+			  </div>
+			
+		</div>
+    </ion-content>
+ </ion-view> 
+
+

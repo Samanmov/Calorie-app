@@ -1,0 +1,23 @@
+<ion-view view-title="Search">
+  <ion-content>
+  <div ng-controller="searchCtrl"> 
+    <ion-list>      
+      <ion-item class="item-input-inset">
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="Search"  name="query" ng-model="foodItems.query" ng-change="scrollTop()">
+        </label>
+        <button class="button button-small" id="search"  ng-click="search()">Search</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+    <div class="content">
+  <ul class="list" how-delete="data.showDelete"  > 
+  <li  class="item" ng-repeat="r in foodItems.results | filter:foodItems.query">
+    <a  ui-sref="meny._id({id:r._id})"  >{{r.fields.item_name}} / {{r.fields.nf_calories + ' calories'}}</a>
+    
+  </li>
+  </ul>
+</div>
+  </div>  
+</ion-view>
+

@@ -1,0 +1,25 @@
+<ion-view view-title="Blogg">
+	<ion-content>
+		<div ng-controller="editCtrl"> 
+			<div class="card">
+				<ion-input class="item item-input">
+					<input type="text" name="" placeholder="Rubrik" ng-model="title">
+				</ion-input>
+				<ion-input class="item item-input">
+					<input type="text" name="" placeholder="Datum och tid" ng-model="date">
+				</ion-input>
+				<ion-input class="item item-input">
+					<input type="text" name="" placeholder="Författare" ng-model="author">
+				</ion-input>
+				<ion-input class="item item-input">
+					<textarea rows="8" placeholder="Text" ng-model="paragraph">{{$scope.paragraph}}</textarea>
+				</ion-input>	
+			</div>
+			<div class="padding">
+				<div class="button-bar">
+					<button class="button button-positive"  ng-disabled="!title||!date||!author||!paragraph " ng-click="updateBlogg(myid)">Spara</button>	
+				</div>
+			</div>
+		</div>
+    </ion-content>
+ </ion-view> 

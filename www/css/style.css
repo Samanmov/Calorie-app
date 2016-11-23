@@ -1,0 +1,45 @@
+.macbook{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}/* Empty. Add your own CSS if you like */
+i{
+	 font-size: 90px;
+	 
+}
+.box{
+	background-color: #dfdfdf;
+	
+}
+h4{
+	color: gray;
+}
+.box{
+	padding-top: 200px;
+}
+.women{
+	width: 6%;
+
+}
+li{
+	padding-bottom: 10px;
+	
+}
+#{
+	padding-top: 20px;
+}
+.cal{
+	float: right;
+
+}
+.pic{
+	width: 50%;
+}
+#buttonicon{
+	color: #9400D3
+;
+	font-size: 50px;
+}

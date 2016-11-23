@@ -1,0 +1,16 @@
+<ion-view view-title="Item show">
+	<ion-content>
+		<div ng-controller="showItemCtrl"> 
+			<ion-list> 
+				<ion-item ><label>Kalorier</label><div class="cal">{{foodItem.nf_calories}}</div></ion-item>
+				<ion-item><label>Fett</label><div class="cal">{{foodItem.nf_total_fat}}</div></ion-item>
+				<ion-item><label>Kolesterol</label><div class="cal">{{foodItem.nf_cholesterol}}</div></ion-item>
+				<ion-item><label>Sodium</label><div class="cal"> {{foodItem.nf_sodium}}</div></ion-item>
+				<ion-item><label>Kolhydrat</label><div class="cal">{{foodItem.nf_total_carbohydrate}}</div></ion-item>
+				<ion-item><label>Fiber</label><div class="cal"> {{foodItem.nf_dietary_fiber}}</div></ion-item>
+				<ion-item><label>Socker</label><div class="cal">{{foodItem.nf_sugars}}</div></ion-item>
+				<ion-item><label>Protein</label><div class="cal"> {{foodItem.nf_protein}}</div></ion-item>
+			</ion-list>
+		</div>
+    </ion-content>
+ </ion-view> 

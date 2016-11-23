@@ -1,0 +1,18 @@
+
+ <ion-view  view-title="Blogg item">
+    <ion-content>
+        <div ng-controller="bloggItem">
+			 <div class="list card">
+				<div class="item item-avatar">
+					<img ng-src="{{singleItem.img}}">
+					<h3>{{singleItem.title}}</h3>
+					<p>{{singleItem.date}}</p>
+					<h4>{{singleItem.author}}</h4>
+				</div>
+			    <div class="item item-body">
+			    	<p>{{singleItem.paragraph}}</p>
+			    </div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

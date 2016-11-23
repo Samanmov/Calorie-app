@@ -1,0 +1,30 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-balanced">
+
+  <!-- Hem Tab -->
+  <ion-tab title="Hem" icon-off="icon ion-ios-home-outline" icon-on="icon ion-ios-home" href="#/meny/hem">
+    <ion-nav-view name="meny-hem"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Meddelanden Tab -->
+  <ion-tab title="Blogg" icon-off="icon ion-ios-chatboxes-outline" icon-on="icon ion-ios-chatboxes" href="#/meny/blogg"> 
+    <ion-nav-view name="meny-blogg"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Favoritlista Tab -->
+  <ion-tab title="Livsmedel" icon-off="icon ion-ios-nutrition-outline" icon-on="icon ion-ios-nutrition" href="#/meny/livsmedel">
+    <ion-nav-view name="meny-livsmedel"></ion-nav-view>
+  </ion-tab>
+  <!-- Handla Tab -->
+  <ion-tab title="Om oss" icon-off="icon ion-ios-people-outline" icon-on="icon ion-ios-people" href="#/meny/kontakt">
+    <ion-nav-view name="meny-kontakt"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>
+
+
